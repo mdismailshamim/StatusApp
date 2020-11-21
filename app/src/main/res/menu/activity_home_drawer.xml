@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_favorite"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="Favorite Quotes" />
+    </group>
+
+    <item android:title="Our Social">
+        <menu>
+            <item
+                android:id="@+id/nav_twitter"
+                android:icon="@drawable/ic_twitter"
+                android:title="Twitter" />
+
+            <item
+                android:id="@+id/nav_facebook"
+                android:icon="@drawable/ic_facebook"
+                android:title="Facebook" />
+
+            <item
+                android:id="@+id/nav_instagram"
+                android:icon="@drawable/ic_instagram"
+                android:title="Instagram" />
+
+        </menu>
+    </item>
+
+    <item android:title="More Info">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_white_24dp"
+                android:title="@string/menu_share" />
+
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_star_white_24dp"
+                android:title="Give Star" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_perm_device_information_black_24dp"
+                android:title="About Us" />
+
+            <item
+                android:id="@+id/nav_privacy"
+                android:icon="@drawable/ic_flag_black_24dp"
+                android:title="Privacy Policy" />
+        </menu>
+    </item>
+
+</menu>

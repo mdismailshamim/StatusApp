@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.facebookstatus.statusapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.facebookstatus.statusapp.ActivityBase"
+        android:allowBackup="true"
+        android:icon="@drawable/caption"
+        android:roundIcon="@drawable/caption"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4718381440855858~4687416017"/>
+
+        <activity
+            android:name="com.facebookstatus.statusapp.ActivitySplash"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.facebookstatus.statusapp.ActivityHome"
+            android:label="All Captions"
+            android:theme="@style/HomeTheme" />
+
+        <activity
+            android:name="com.facebookstatus.statusapp.ActivityQuote"
+            android:label="@string/title_activity_quote"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.facebookstatus.statusapp.ActivityLiked"
+            android:label="Favorite Quotes" />
+
+        <activity
+            android:name="com.facebookstatus.statusapp.ActivityAbout"
+            android:label="About Us" />
+
+        <activity
+            android:name="com.facebookstatus.statusapp.ActivityPrivacy"
+            android:label="About Us" />
+
+    </application>
+
+</manifest>
